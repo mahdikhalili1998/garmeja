@@ -13,7 +13,7 @@ function SearchBar() {
       <span>
         <FiMenu className="text-2xl" />
       </span>
-      <div className="370:w-full mx-5 flex items-center justify-between rounded-lg border-2 border-white px-5 py-2">
+      <div className="370:w-full mx-5 flex items-center justify-between rounded-lg border-2 border-white px-2 py-2">
         <input
           type="text"
           value={searchValue}
