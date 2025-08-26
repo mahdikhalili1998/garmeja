@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import { IoSearchOutline, IoClose } from "react-icons/io5";
 import { FiMenu } from "react-icons/fi";
 import Image from "next/image";
+import { IoPerson } from "react-icons/io5";
 
 function SearchBar() {
   const [searchValue, setSearchValue] = useState<string>("");
@@ -87,6 +88,9 @@ function SearchBar() {
         >
           <div className="flex items-center justify-between border-b p-4">
             <h2 className="text-lg font-bold">منو</h2>
+            <span className="rounded-full bg-black p-3">
+              <IoPerson className="text-4xl text-white" />
+            </span>
             <IoClose
               onClick={() => setMenuOpen(false)}
               className="cursor-pointer text-2xl text-black"
